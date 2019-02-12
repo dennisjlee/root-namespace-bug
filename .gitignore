@@ -1,0 +1,6 @@
+*.iml
+*.user
+.idea/
+**/bin/
+**/obj/
+**/.vs/
