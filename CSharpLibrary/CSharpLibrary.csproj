@@ -4,11 +4,12 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{68F62C2A-E47C-42EA-8DC9-29FA235CB909}</ProjectGuid>
-        <OutputType>Exe</OutputType>
+        <ProjectGuid>{44FB07F4-6972-43A1-944E-67DA9368C317}</ProjectGuid>
+        <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>RootNamespaceBug</RootNamespace>
-        <AssemblyName>RootNamespaceBug</AssemblyName>
+        <RootNamespace>
+        </RootNamespace>
+        <AssemblyName>CSharpLibrary</AssemblyName>
         <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
@@ -38,18 +39,8 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Program.cs" />
+        <Compile Include="CSharpClass.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-    </ItemGroup>
-    <ItemGroup>
-      <ProjectReference Include="..\CSharpLibrary\CSharpLibrary.csproj">
-        <Project>{44fb07f4-6972-43a1-944e-67da9368c317}</Project>
-        <Name>CSharpLibrary</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\VBLibrary\VBLibrary.vbproj">
-        <Project>{1b9420e8-554d-458c-994d-87750185f05d}</Project>
-        <Name>VBLibrary</Name>
-      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

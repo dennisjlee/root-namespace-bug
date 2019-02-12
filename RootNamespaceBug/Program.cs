@@ -1,4 +1,5 @@
-﻿using MyNamespace;
+﻿using CSharpNamespace;
+using VBNamespace;
 
 namespace RootNamespaceBug
 {
@@ -6,7 +7,8 @@ namespace RootNamespaceBug
     {
         public static void Main(string[] args)
         {
-            var helloWorld = new HelloWorldClass();
+            var vb = new VBClass();
+            var cs = new CSharpClass();
         }
     }
 }
